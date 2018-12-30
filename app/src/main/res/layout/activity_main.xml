@@ -80,7 +80,9 @@
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
-   <LinearLayout
+
+
+ <!--  <LinearLayout
        android:id="@+id/imagesline1"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -91,7 +93,7 @@
                 <ImageView
                     android:layout_weight="1"
                     android:layout_height="100dp"
-                    android:src="@drawable/setout1"
+                    android:src="@drawable/cmslogo"
                     android:scaleType="centerCrop"
                     android:paddingLeft="24dp"
 
@@ -100,17 +102,18 @@
                 <ImageView
                     android:layout_weight="1"
                     android:layout_height="100dp"
-                    android:src="@drawable/Abercrombiestreet"
+                    android:src="@drawable/cmslogo"
                     android:scaleType="centerCrop"
                     android:paddingRight="24dp"
 
                     />
-   </LinearLayout>
+   </LinearLayout>-->
 
-    <LinearLayout
+
+<!--    <LinearLayout
         android:id="@+id/imagesline2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_below="@+id/imagesline1"
         android:orientation="horizontal"
         >
@@ -118,7 +121,7 @@
             android:layout_weight="1"
             android:layout_height="100dp"
             android:paddingLeft="24dp"
-            android:src="@drawable/operaHouse"
+            android:src="@drawable/cmslogo"
             android:scaleType="centerCrop"
 
             />
@@ -126,12 +129,12 @@
         <ImageView
             android:layout_weight="1"
             android:layout_height="100dp"
-            android:src="@drawable/centrepoint"
+            android:src="@drawable/cmslogo"
             android:paddingRight="24dp"
             android:scaleType="centerCrop"
 
             />
-    </LinearLayout>
+    </LinearLayout>-->
 
 
 
