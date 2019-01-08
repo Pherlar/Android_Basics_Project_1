@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">About CMS Surveyors</string>
+    <string name="header_text">CMS Surveyors</string>
+    <string name="description_text">For all your land surveying needs</string>
+    <string name="website_text">www.cmssurveyors.com.au</string>
+    <string name="phone_text">Ph: 02 9971 4802</string>
+    <string name="address_text">2/99A South Creek Road, Cromer 2099</string>
+    <string name="workinghour_text">Working hours: Mon:Fri (8.00am - 5.00pm)</string>
+    <string name="abn_text">ABN 79 096 240 201</string>
 </resources>

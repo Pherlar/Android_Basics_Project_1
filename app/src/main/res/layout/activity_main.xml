@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,33 +10,34 @@
 
 
     <TextView
-        android:id="@+id/Header"
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="36sp"
-        android:text="CMS Surveyors"
+        android:text="@string/header_text"
         android:textColor="@android:color/white"
         android:textSize="26sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif" />
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_margin="24dp"
-        android:src="@drawable/cmslogo"
-        />
+        android:src="@drawable/cmslogo" />
 
     <TextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Header"
+        android:layout_below="@+id/header"
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
         android:padding="0dp"
-        android:text="For all your land surveying needs"
+        android:text="@string/description_text"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         app:fontFamily="cursive" />
@@ -49,12 +49,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/description"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"
-        android:padding="0dp"
         android:fontFamily="sans-serif-light"
+        android:padding="0dp"
+        android:text="@string/website_text"
         android:textColor="@android:color/white"
-        android:text="www.cmssurveyors.com.au"
-        />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/phoneNumber"
@@ -64,7 +63,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
         android:padding="0dp"
-        android:text="Ph: 02 9971 4802"
+        android:text="@string/phone_text"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
@@ -76,93 +75,87 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
         android:padding="0dp"
-        android:text="2/99A South Creek Road, Cromer 2099"
+        android:text="@string/address_text"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
 
+    <LinearLayout
+        android:id="@+id/imagesline1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/address"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        tools:ignore="ExtraText">
+        >
 
- <!--  <LinearLayout
-       android:id="@+id/imagesline1"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_below="@+id/address"
-       android:orientation="horizontal"
-       android:paddingTop="10dp">
-       >
-                <ImageView
-                    android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:src="@drawable/cmslogo"
-                    android:scaleType="centerCrop"
-                    android:paddingLeft="24dp"
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/abercrombiestreet" />
 
-                    />
-
-                <ImageView
-                    android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:src="@drawable/cmslogo"
-                    android:scaleType="centerCrop"
-                    android:paddingRight="24dp"
-
-                    />
-   </LinearLayout>-->
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/centrepoint" />
+    </LinearLayout>
 
 
-<!--    <LinearLayout
+    <LinearLayout
         android:id="@+id/imagesline2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@+id/imagesline1"
-        android:orientation="horizontal"
-        >
-        <ImageView
-            android:layout_weight="1"
-            android:layout_height="100dp"
-            android:paddingLeft="24dp"
-            android:src="@drawable/cmslogo"
-            android:scaleType="centerCrop"
-
-            />
+        android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="100dp"
-            android:src="@drawable/cmslogo"
-            android:paddingRight="24dp"
             android:scaleType="centerCrop"
+            android:src="@drawable/drone2" />
 
-            />
-    </LinearLayout>-->
-
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/operahouse" />
+    </LinearLayout>
 
 
     <TextView
+        android:id="@+id/workingHour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ABN"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"
-        android:padding="6dp"
         android:fontFamily="sans-serif-light"
-        android:textStyle="bold"
+        android:padding="6dp"
+        android:text="@string/workinghour_text"
         android:textColor="@android:color/white"
-        android:text="Working hours:  Mon:Fri (8.00am - 5.00pm)"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ABN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:textSize="14sp"
-        android:padding="6dp"
+        android:layout_alignParentBottom="true"
         android:fontFamily="sans-serif-light"
+        android:padding="6dp"
+        android:text="@string/abn_text"
         android:textColor="@android:color/white"
-        android:text="ABN 79 096 240 201"
-        />
-
-
+        android:textSize="14sp" />
 </RelativeLayout>
