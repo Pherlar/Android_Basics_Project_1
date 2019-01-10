@@ -79,7 +79,7 @@
         android:textColor="@android:color/white"
         android:textSize="14sp" />
 
-
+<!--2 Linear layouts within relative layout for imageviews-->
     <LinearLayout
         android:id="@+id/imagesline1"
         android:layout_width="match_parent"
