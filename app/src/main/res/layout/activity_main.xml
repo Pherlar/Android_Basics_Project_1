@@ -9,6 +9,7 @@
     tools:context="com.example.chrisl.aboutcmssurveyors.MainActivity">
 
 
+
     <TextView
         android:id="@+id/header"
         android:layout_width="wrap_content"
@@ -89,7 +90,7 @@
         android:paddingTop="10dp"
         tools:ignore="ExtraText">
         >
-
+        <!-- its important that all image file resources are all lower case!!!!-->
         <ImageView
             android:id="@+id/image1"
             android:layout_width="wrap_content"
